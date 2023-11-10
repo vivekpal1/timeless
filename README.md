@@ -1,33 +1,6 @@
-# astrolus
+# Timeless
 
-A page template built with astro and tailwindcss using tailus blocks.
-
-![Tailus astro based theme](./public/astrolus-light.png)
-![Tailus astro based dark theme](./public/astrolus-dark.png)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
+A permaweb platform that redefines communication by allowing users to send messages across time. With power of the Arweave network, it offers a unique way to deliver messages scheduled for the future, ensuring that your words persist and make an impact when the time is right and stored forever.
 
 ## 🧞 Commands
 
