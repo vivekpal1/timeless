@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+import AuthenticationModal from '../components/register/AuthenticationModal.svelte';
+import Wallet from '../components/register/Wallet.svelte';
+
+const pageTitle = 'Early Access Registration';
+---
+<Layout>
+  <main class="min-h-screen bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-white">
+    <section class="flex h-screen items-center justify-center p-4">
+      <div class="w-full max-w-md space-y-8">
+        <h1 class="text-4xl font-bold text-center">{pageTitle}</h1>
+        <p class="text-center">Sign up now for early access to Timeless.</p>
+        <AuthenticationModal client:load />
+        <Wallet/>
+      </div>
+    </section>
+  </main>
+</Layout>
