@@ -16,6 +16,7 @@ module.exports = {
       current: colors.current,
       transparent: colors.transparent,
       'ifm-color-primary': '#39375a',
+      'ifm-color-light': '#C6C8CD',
       primary: "#39375a",
       secondary: "#7766DD",
       info: "#DBD2EF",

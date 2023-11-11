@@ -1,6 +1,5 @@
 ---
 import Container from "./Container.astro";
-import Wallet from "./register/lib/Wallet.svelte";
 const links = [
     {
         to: "/#features",
@@ -47,7 +46,6 @@ const links = [
         });
     });
 </script>
-
 <header>
     <nav class="absolute z-10 w-full border-b border-black/5 dark:border-white/5 lg:border-transparent">
         <Container>
@@ -83,14 +81,13 @@ const links = [
                                 ))
                             }
                             <li>
-                                <a href="/register" target="_blank" class="flex gap-2 font-semibold text-gray-700 transition hover:text-primary dark:text-white dark:hover:text-white md:px-4">
-                                    <span>Register</span>
+                                <a href="https://airtable.com/appCCNFWcb7LfU5If/pag6kaCqnbbzgcZ1L/form" class="flex gap-2 font-semibold text-gray-700 transition hover:text-primary dark:text-white dark:hover:text-white md:px-4">
+                                    <span>Join</span>
                                     <span class="flex rounded-full bg-primary/20 px-1.5 py-0.5 text-xs tracking-wider text-[#9e8fc4] dark:bg-white/10 dark:text-orange-300"> new</span>
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <Wallet/>
 
                     <!-- <div class="mt-12 lg:mt-0">
                         <a href="/app" class="relative flex h-9 w-full items-center justify-center px-4 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
@@ -102,7 +99,6 @@ const links = [
         </Container>
     </nav>
 </header>
-
 <style>
     #toggle_nav:checked ~ div #hamburger #line {
         @apply translate-y-1.5 rotate-45;
