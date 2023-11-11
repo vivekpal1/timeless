@@ -1,5 +1,5 @@
 {
-  "name": "astrolus",
+  "name": "timeless",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -13,6 +13,7 @@
     "@astrojs/react": "latest",
     "@astrojs/svelte": "latest",
     "@sveltejs/vite-plugin-svelte": "^2.5.2",
+    "@web3modal/wagmi": "^3.2.1",
     "arweave-wallet-connector": "^1.0.2",
     "arweave-wallet-kit": "latest",
     "astro": "latest",
@@ -22,7 +23,11 @@
     "react-dom": "^18.2.0",
     "svelte": "^4.2.2",
     "tailwindcss": "^3.3.5",
-    "vite": "^4.5.0"
+    "viem": "^1.18.9",
+    "vite": "^4.5.0",
+    "wagmi": "^1.4.6",
+    "warp-contracts": "^1.4.22",
+    "warp-contracts-plugin-deploy": "^1.0.10"
   },
   "devDependencies": {
     "@astrojs/tailwind": "latest",
