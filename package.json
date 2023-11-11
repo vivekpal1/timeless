@@ -11,7 +11,9 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/markdown-component": "^1.0.5",
     "@astrojs/markdown-remark": "^3.4.0",
+    "@astrojs/mdx": "^1.1.4",
     "@astrojs/react": "latest",
     "@astrojs/svelte": "latest",
     "@sveltejs/vite-plugin-svelte": "^2.5.2",

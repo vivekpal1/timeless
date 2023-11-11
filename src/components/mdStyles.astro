@@ -1,0 +1,32 @@
+---
+import Sidebar from './Sidebar.astro';
+
+const markdownStyles = `
+  prose prose-sm sm:prose lg:prose-lg xl:prose-2xl
+  mx-auto
+  dark:prose-dark
+  prose-headings:font-semibold
+  prose-p:my-5
+  prose-ul:list-disc list-inside
+  prose-ol:list-decimal
+  prose-li:my-2
+  prose-a:text-blue-600 hover:text-blue-500
+  prose-code:before:content-none
+  prose-code:after:content-none
+  prose-pre:bg-gray-900 bg-opacity-50
+  prose-pre:p-5
+  prose-img:rounded-xl
+  prose-blockquote:border-l-4 border-blue-500 dark:border-blue-400
+  prose-blockquote:pl-4 italic
+  prose-th:border-b-2
+  prose-td:border-b
+`;
+---
+<div class="flex">
+<aside class="w-1/4 p-4">
+    <Sidebar />
+</aside>
+<main class={`w-3/4 p-4 ${markdownStyles}`}>
+    <slot />
+</main>
+</div>

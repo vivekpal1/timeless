@@ -1,0 +1,21 @@
+---
+const guides = [
+  { name: 'Introduction', href: '/guides/l0' },
+  { name: 'Technical Overview', href: '/guides/l1' },
+  { name: 'Philosophy of Permanence', href: '/guides/l2' },
+];
+---
+
+<nav class="p-4 w-full bg-white dark:bg-gray-800 shadow-lg">
+  <ul class="space-y-2">
+    {guides.map((guide) => (
+      <li key={guide.href}>
+        <a href={guide.href}
+           class="block p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors text-gray-700 dark:text-gray-200 hover:text-primary-500 font-semibold"
+        >
+          {guide.name}
+        </a>
+      </li>
+    ))}
+  </ul>
+</nav>
