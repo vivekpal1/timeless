@@ -1,20 +1,34 @@
 <script>
-  import { ArweaveWebWallet } from "arweave-wallet-connector";
-  const state = { url: "arweave.app" };
-  let wallet = new ArweaveWebWallet({ name: "svelte" }, { state });
+  import { writable } from 'svelte/store';
+  import { ArweaveWebWallet } from 'arweave-wallet-connector';
+
+  export const walletAddress = writable(null); // Export a writable store
+  const state = { url: 'arweave.app' };
+  let wallet = new ArweaveWebWallet({ name: 'svelte' }, { state });
 
   const connect = async () => {
-    console.log(wallet.url);
-    wallet.setUrl(wallet.url ?? state.url);
-    await wallet.connect();
+    try {
+      console.log(wallet.url);
+      wallet.setUrl(wallet.url ?? state.url);
+      await wallet.connect();
+      walletAddress.set(wallet.activeAddress); // Update the store with the wallet address
+    } catch (error) {
+      console.error('Error connecting to wallet:', error);
+    }
   };
 
   const disconnect = async () => {
-    await wallet.disconnect();
+    try {
+      await wallet.disconnect();
+      walletAddress.set(null); // Clear the wallet address in the store
+    } catch (error) {
+      console.error('Error disconnecting wallet:', error);
+    }
   };
 
   console.log($wallet.connected);
 </script>
+
 
 <style>
   button {
