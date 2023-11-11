@@ -1,6 +1,7 @@
 <script>
   import { onMount } from 'svelte';
   import { signInWithGoogle } from './firebase';
+  import Wallet from './Wallet.svelte';
 
   async function handleGoogleSignIn() {
     try {

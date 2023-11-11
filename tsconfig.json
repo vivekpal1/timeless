@@ -13,6 +13,6 @@
     "jsx": "react",
     "isolatedModules": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.svelte"],
   "exclude": ["node_modules"]
 }

@@ -1,4 +1,6 @@
 <script>
+  import AuthButtons from './AuthButtons.svelte';
+  import Wallet from './Wallet.svelte'
   let isModalOpen = false;
 </script>
 
@@ -17,7 +19,7 @@
   }
   
   .modal-content {
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     padding: 2rem;
     border-radius: 10px;
     max-width: 400px;
@@ -58,8 +60,8 @@
   <div class="modal-backdrop">
     <div class="modal-content">
       <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Sign in to Timeless</h3>
-      <button class="button button-primary">Sign in with Google</button>
-      <button class="button button-primary">Sign in with Arweave</button>
+      <AuthButtons />
+      
       <button 
         class="button button-secondary"
         on:click={() => isModalOpen = false}

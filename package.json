@@ -12,14 +12,22 @@
   "dependencies": {
     "@astrojs/react": "^3.0.4",
     "@astrojs/svelte": "^4.0.3",
+    "@sveltejs/vite-plugin-svelte": "^2.5.2",
     "arweave-wallet-kit": "^1.0.3",
-    "astro": "^1.9.2",
+    "astro": "^3.5.2",
     "firebase": "^10.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "svelte": "^4.2.2"
+    "svelte": "^4.2.2",
+    "vite": "^4.5.0"
   },
   "devDependencies": {
-    "@astrojs/tailwind": "^1.0.0"
+    "@astrojs/tailwind": "^1.0.0",
+    "bun-types": "latest"
+  },
+  "module": "index.ts",
+  "type": "module",
+  "peerDependencies": {
+    "typescript": "^5.0.0"
   }
 }
