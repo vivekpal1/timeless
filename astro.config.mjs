@@ -7,14 +7,13 @@ import mdx from '@astrojs/mdx';
 export default defineConfig({
   markdown: {
     syntaxHighlight: 'prism',
-    gfm: true,
   },
   integrations: [tailwind(), react(), svelte(),
     mdx({
       syntaxHighlight: 'shiki',
       shikiConfig: { theme: 'dracula' },
       remarkRehype: { footnoteLabel: 'Footnotes' },
-      gfm: false,
     }),
   ],
+  base: '',
 });

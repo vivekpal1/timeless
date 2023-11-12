@@ -8,39 +8,37 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "deploy": "astro build && arweave deploy-dir ./dist --key-file walletkey.json"
   },
+  "homepage": "./",
   "dependencies": {
-    "@astrojs/markdown-component": "^1.0.5",
-    "@astrojs/markdown-remark": "^3.4.0",
     "@astrojs/mdx": "^1.1.4",
-    "@astrojs/react": "latest",
-    "@astrojs/svelte": "latest",
+    "@astrojs/react": "^3.0.4",
+    "@astrojs/rss": "^3.0.0",
+    "@astrojs/svelte": "^4.0.3",
     "@sveltejs/vite-plugin-svelte": "^2.5.2",
-    "@web3modal/wagmi": "^3.2.1",
     "arweave": "^1.14.4",
+    "arweave-deploy": "^1.9.1",
     "arweave-wallet-connector": "^1.0.2",
     "arweave-wallet-kit": "latest",
-    "astro": "latest",
+    "astro": "^3.5.3",
     "autoprefixer": "^10.4.16",
     "firebase": "^10.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "redstone-smartweave": "^0.5.11",
-    "svelte": "^4.2.2",
+    "svelte": "^4.2.3",
     "tailwindcss": "^3.3.5",
-    "viem": "^1.18.9",
-    "vite": "^4.5.0",
-    "wagmi": "^1.4.6",
     "warp-contracts": "^1.4.22",
     "warp-contracts-plugin-deploy": "^1.0.10",
     "weavedb-sdk": "^0.37.2"
   },
   "devDependencies": {
-    "@astrojs/tailwind": "latest",
+    "@astrojs/tailwind": "^5.0.2",
     "bun-types": "latest"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "^5.2.2"
   }
 }
